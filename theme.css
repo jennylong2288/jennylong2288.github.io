@@ -86,8 +86,12 @@ html, body{
     font-size: 3em;
     opacity: .8;
 }
-.resort-image{
+.section img {
     width: 100%
+}
+
+.section img.peanut {
+    max-width: 10vh;
 }
 
 @media only screen and (max-width: 600px) {
