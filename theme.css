@@ -29,10 +29,14 @@ html, body{
     font-family: 'Wire One', cursive;
     font-size: 6em;
     font-weight: normal;
-    /* text-shadow: 0 0 10px #000; */
     margin: 0;
-    /* margin-top: -25vh; */
     margin-top: -50vh;
+}
+#countdown {
+    display: block;
+    font-family: 'Wire One', cursive;
+    font-size: 3em;
+    margin-top: 25vh;
 }
 .heading-subtext{
     display: block;
