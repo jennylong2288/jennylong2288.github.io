@@ -7,7 +7,7 @@ html, body{
     margin: 0;
     height: 100vh;
     text-align: center;
-   background-color: #e2dcd473;
+   background-color: #dad0d573;
 }
 .header{
     background-image: url(./img/hero.jpeg);
@@ -44,19 +44,26 @@ html, body{
     font-size: .6em;
     /* padding-top: 23vh; */
 }
-.fixed-button{
+.navigation {
+    position: fixed;
+    z-index: 9999;
+    right: 1em;
+    bottom: 1em;
+}
+.navigation a{
+    margin-bottom: 1em;
+    display: block;
     background: rgba(20,20,20,.5);
     border-radius: 1em;
-    bottom: 1em;
     color: white;
     font-weight: bold;
     padding: 1em;
-    position: fixed;
-    right: 1em;
     text-decoration: none;
-    z-index: 9999;
 }
-.fixed-button::after{
+.navigation a:last-child{
+    margin-bottom: 0;
+}
+.navigation a#rsvpButton::after{
     content: "\25BE";
     display: block;
     font-size: 28px;
@@ -65,8 +72,8 @@ html, body{
     margin-top: 10px;
     text-align: center;
 }
-.fixed-button:active,
-.fixed-button:hover{
+.navigation a:active,
+.navigation a:hover{
     background: rgba(20,20,20,.9);
 }
 .section{
