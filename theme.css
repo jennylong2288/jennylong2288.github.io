@@ -60,7 +60,24 @@ html, body{
     padding: 1em;
     text-decoration: none;
 }
-.navigation a>img{
+#changeLanguage.english > span {
+    background: url("img/uk.svg") no-repeat;
+}
+#changeLanguage.spanish > span {
+    background: url("img/es.svg") no-repeat;
+}
+#changeLanguage.english:hover > span {
+    background: url("img/us.svg") no-repeat;
+}
+#changeLanguage.spanish:hover > span {
+    background: url("img/cu.svg") no-repeat;
+}
+
+#changeLanguage > span {
+    width: 1em;
+    display: inline-block;
+    min-width: 77px;
+    min-height: 57px;
     filter: grayscale(100%);
 }
 .navigation a:last-child{
