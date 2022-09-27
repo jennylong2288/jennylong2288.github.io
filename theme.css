@@ -44,22 +44,6 @@ html, body{
     font-size: .6em;
     /* padding-top: 23vh; */
 }
-.navigation {
-    position: fixed;
-    z-index: 9999;
-    right: 1em;
-    bottom: 1em;
-}
-.navigation a{
-    margin-bottom: 1em;
-    display: block;
-    background: rgba(20,20,20,.5);
-    border-radius: 1em;
-    color: white;
-    font-weight: bold;
-    padding: 1em;
-    text-decoration: none;
-}
 #changeLanguage.english > span {
     background: url("img/uk.svg") no-repeat;
 }
@@ -79,6 +63,22 @@ html, body{
     min-width: 77px;
     min-height: 57px;
     filter: grayscale(100%);
+}
+.navigation {
+    position: fixed;
+    z-index: 9999;
+    right: 1em;
+    bottom: 1em;
+}
+.navigation a{
+    margin-bottom: 1em;
+    display: block;
+    background: rgba(20,20,20,.5);
+    border-radius: 1em;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
 }
 .navigation a:last-child{
     margin-bottom: 0;
@@ -161,5 +161,18 @@ html, body{
 @media only screen and (max-width: 600px) {
     .heading {
         font-size: 4em;
+    }
+    .navigation {
+        right: .5em;
+        bottom: .5em;
+    }
+    .navigation a{
+        margin-bottom: .5em;
+        border-radius: .5em;
+        padding: .5em;
+    }
+    #changeLanguage > span {
+        min-width: 50px;
+        min-height: 37px;
     }
   }
