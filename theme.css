@@ -9,7 +9,30 @@ html, body{
     text-align: center;
    background-color: #dad0d573;
 }
-.header{
+
+
+.header2 .big{
+    font-size: 8em;
+    /* font-family: 'Cedarville Cursive', cursive; */
+}
+
+.header2 .small{
+    font-size: 2em;
+}
+
+.header2 .middle{
+    font-size: 4em;
+}
+
+.header2 span{
+    display: block;
+}
+.header2 span, .header2 a{
+    font-family: 'Wire One', cursive;
+    text-shadow: 1px -1px #fff;
+}
+
+.header2{
     background-image: url(./img/hero.jpeg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
@@ -19,15 +42,44 @@ html, body{
     margin: 0;
     padding-top: 60vh;
 }
-.wrapper {
+.header2 > .wrapper {
     position: absolute;
     width: 100%;
 }
-.heading {
+.header2 > .wrapper > .heading {
+    position: relative;
+    display: block;
+    font-weight: normal;
+    margin: 0;
+    margin-top: -55vh;
+}
+.header2 > .align-bottom{
+    margin-top: 13vh;
+}
+.header2 > .align-bottom span:last-child{
+    padding-top: 1em;
+}
+
+.header{
+    text-shadow: 1px -1px #fff;
+    background-image: url(./img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 40vh;
+    margin: 0;
+    padding-top: 60vh;
+}
+.header > .wrapper {
+    position: absolute;
+    width: 100%;
+}
+.header > .wrapper > .heading {
     position: relative;
     display: block;
     font-family: 'Wire One', cursive;
-    font-size: 6em !important;
+    font-size: 6em;
     font-weight: normal;
     margin: 0;
     margin-top: -50vh;
@@ -128,10 +180,6 @@ html, body{
 .section img.peanut {
     max-width: 10vh;
 }
-/* .swiper {
-    width-max: 600px;
-    height-max: 300px;
-} */
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -140,7 +188,6 @@ html, body{
     justify-content: center;
     align-items: center;
 }
-
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -148,22 +195,18 @@ html, body{
     object-fit: cover;
     max-height: 500px;
 }
-
 .swiper-slide {
     width: 50%;
 }
-
 .swiper-slide:nth-child(2n) {
     width: 20%;
 }
-
 .swiper-slide:nth-child(3n) {
     width: 40%;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .heading {
+    .header > .wrapper > .heading {
         font-size: 4em;
     }
     .navigation {
