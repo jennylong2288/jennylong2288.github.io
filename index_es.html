@@ -22,7 +22,7 @@
       <span id="countdown"></span>
     </header>
     <div class="navigation">
-      <a data-scroll href="index.html">In English</a>
+      <a data-scroll href="index.html"><img src="img/uk.svg" title="In English"></a>
       <a data-scroll href="#rsvp" id="rsvpButton">RSVP</a>
     </div>
     <section class="section">
@@ -110,7 +110,6 @@
     <script defer>
       var scroll = new SmoothScroll('a[href*="#"]');
       var rsvpButton = document.getElementById('rsvpButton')
-      rsvpButton.addEventListener('click', hideButton,false);
 
       var javi = 'YnV6emkuamF2aWVyQGdtYWlsLmNvbQ==';
       var javi2 = 'RVM2MyAwMTI4IDA1MDQgODEwMSAwMDA0IDg2MTM=';
@@ -130,10 +129,6 @@
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(jen), document.getElementById('jen'));
       createLink('t' + 'e' + 'l' + ':', atob(jen2), document.getElementById('jen2'));
       createLink('https://wa.me/', atob(jen2).replace('+', ''), document.getElementById('jen3'), '(WhatsApp)');
-
-      function hideButton() {
-        rsvpButton.style.display = 'none';
-      }
 
       var countDownDate = new Date("Apr 29, 2023 14:00:00").getTime();
 

@@ -60,6 +60,9 @@ html, body{
     padding: 1em;
     text-decoration: none;
 }
+.navigation a>img{
+    filter: grayscale(100%);
+}
 .navigation a:last-child{
     margin-bottom: 0;
 }
