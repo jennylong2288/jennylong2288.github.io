@@ -205,6 +205,10 @@ html, body{
     width: 40%;
 }
 
+ul.basic-list > li {
+    text-align: left;
+}
+
 @media only screen and (max-width: 600px) {
     .header > .wrapper > .heading {
         font-size: 4em;
