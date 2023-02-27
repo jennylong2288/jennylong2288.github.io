@@ -113,7 +113,7 @@
       <p>The most important thing is to have you with us on our special day. Your presence at our wedding is the greatest gift of all. However, if you wish to honour us with a gift, a cash gift would be very welcome.</p>
       <img class="peanut" src="./img/peanut.png" alt="Peanut" />
 
-      <p>EU folk: IBAN <span id="javi2">no-scrape!</span></p>
+      <p>EU folk: IBAN <span id="javi2">no-scrape!</span> SWIFT <span id="javi3">no-scrape!</span></p>
       <p>US folk: Zelle / Apple Pay <a href="#javi">Javi's email</a></p>
     </section>
     <section class="section">
@@ -129,6 +129,7 @@
 
       var javi = 'YnV6emkuamF2aWVyQGdtYWlsLmNvbQ==';
       var javi2 = 'RVM2MyAwMTI4IDA1MDQgODEwMSAwMDA0IDg2MTM=';
+      var javi3 = 'QktCS0VTTU1YWFg=';
       var jen = 'amVubnlsb25nMjI4OEBnbWFpbC5jb20=';
       var jen2 = 'KzM0NjA3MDc5ODY0';
 
@@ -141,6 +142,7 @@
 
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(javi), document.getElementById('javi'));
       document.getElementById('javi2').innerHTML = atob(javi2);
+      document.getElementById('javi3').innerHTML = atob(javi3);
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(jen), document.getElementById('jen'));
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(jen), document.getElementById('jen'));
       createLink('t' + 'e' + 'l' + ':', atob(jen2), document.getElementById('jen2'));

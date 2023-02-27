@@ -112,7 +112,7 @@
       <p>Lo más importante es tenerte con nosotros en nuestro día especial. No se necesitan ni se esperan obsequios, sin embargo, se nos ha preguntado qué necesitamos o nos gustaría y, si desea darnos algo, agradecería mucho un poco de dinero para gastar en el la luna de miel.</p>
       <img class="peanut" src="./img/peanut.png" alt="Peanut" />
 
-      <p>Gente de la UE: IBAN <span id="javi2">no-scrape!</span></p>
+      <p>Gente de la UE: IBAN <span id="javi2">no-scrape!</span> SWIFT <span id="javi3">no-scrape!</span></p>
       <p>Gente de EE.UU.: Zelle / Apple Pay <a href="#javi">Correo electrónico de Javi</a></p>
     </section>
     <section class="section">
@@ -128,6 +128,7 @@
 
       var javi = 'YnV6emkuamF2aWVyQGdtYWlsLmNvbQ==';
       var javi2 = 'RVM2MyAwMTI4IDA1MDQgODEwMSAwMDA0IDg2MTM=';
+      var javi3 = 'QktCS0VTTU1YWFg=';
       var jen = 'amVubnlsb25nMjI4OEBnbWFpbC5jb20=';
       var jen2 = 'KzM0NjA3MDc5ODY0';
 
@@ -140,6 +141,7 @@
 
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(javi), document.getElementById('javi'));
       document.getElementById('javi2').innerHTML = atob(javi2);
+      document.getElementById('javi3').innerHTML = atob(javi3);
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(jen), document.getElementById('jen'));
       createLink('m' + 'a' + 'i' + 'l' + 't' + 'o' + ':', atob(jen), document.getElementById('jen'));
       createLink('t' + 'e' + 'l' + ':', atob(jen2), document.getElementById('jen2'));
